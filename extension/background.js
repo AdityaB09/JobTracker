@@ -1,4 +1,4 @@
-const WEBSITE_BASE_URL = "https://YOUR_NETLIFY_SITE.netlify.app";
+const WEBSITE_BASE_URL = "https://jobtracker-aditya.netlify.app";
 
 chrome.runtime.onInstalled.addListener(() => {
   chrome.contextMenus.create({
