@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Saved URLs</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 0 16px;
+      line-height: 1.4;
+    }
+
+    .topbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 12px;
+      flex-wrap: wrap;
+      margin-bottom: 20px;
+    }
+
+    .count {
+      font-size: 18px;
+      font-weight: bold;
+    }
+
+    .actions {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+
+    button {
+      padding: 10px 14px;
+      border: 1px solid #ccc;
+      background: white;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background: #f6f6f6;
+    }
+
+    .status {
+      margin: 12px 0 20px;
+      min-height: 20px;
+      color: #333;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    th, td {
+      text-align: left;
+      padding: 12px 10px;
+      border-bottom: 1px solid #e5e5e5;
+      vertical-align: top;
+    }
+
+    a {
+      word-break: break-all;
+    }
+  </style>
+</head>
+<body>
+  <h1>Saved URLs</h1>
+
+  <div class="topbar">
+    <div class="count">Unique URLs saved: <span id="count">0</span></div>
+
+    <div class="actions">
+      <button id="refreshBtn">Refresh</button>
+      <button id="downloadBtn">Download CSV</button>
+      <button id="clearBtn">Clear All</button>
+    </div>
+  </div>
+
+  <div class="status" id="status"></div>
+
+  <table>
+    <thead>
+      <tr>
+        <th style="width: 70%;">URL</th>
+        <th style="width: 30%;">Saved Date</th>
+      </tr>
+    </thead>
+    <tbody id="tableBody"></tbody>
+  </table>
+
+  <script src="./app.js"></script>
+</body>
+</html>

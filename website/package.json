@@ -1,0 +1,12 @@
+{
+  "name": "url-saver-website",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Persistent URL saver with Netlify Functions and Netlify Blobs",
+  "scripts": {
+    "dev": "netlify dev"
+  },
+  "dependencies": {
+    "@netlify/blobs": "^8.1.0"
+  }
+}
